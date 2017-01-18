@@ -14,6 +14,7 @@
 		F81BEF9C1E2939F900755CD2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F81BEF9A1E2939F900755CD2 /* LaunchScreen.storyboard */; };
 		F81BEFA71E2939F900755CD2 /* Audio_GID2Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F81BEFA61E2939F900755CD2 /* Audio_GID2Tests.swift */; };
 		F81BEFB21E2939F900755CD2 /* Audio_GID2UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F81BEFB11E2939F900755CD2 /* Audio_GID2UITests.swift */; };
+		F81BEFC21E2E81F500755CD2 /* sidetoside.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = F81BEFC11E2E81F500755CD2 /* sidetoside.mp3 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		F81BEFAD1E2939F900755CD2 /* Audio GID2UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Audio GID2UITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F81BEFB11E2939F900755CD2 /* Audio_GID2UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Audio_GID2UITests.swift; sourceTree = "<group>"; };
 		F81BEFB31E2939F900755CD2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F81BEFC11E2E81F500755CD2 /* sidetoside.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = sidetoside.mp3; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,6 +104,7 @@
 				F81BEF951E2939F900755CD2 /* Main.storyboard */,
 				F81BEF981E2939F900755CD2 /* Assets.xcassets */,
 				F81BEF9A1E2939F900755CD2 /* LaunchScreen.storyboard */,
+				F81BEFC11E2E81F500755CD2 /* sidetoside.mp3 */,
 				F81BEF9D1E2939F900755CD2 /* Info.plist */,
 			);
 			path = "Audio GID2";
@@ -233,6 +236,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F81BEF9C1E2939F900755CD2 /* LaunchScreen.storyboard in Resources */,
+				F81BEFC21E2E81F500755CD2 /* sidetoside.mp3 in Resources */,
 				F81BEF991E2939F900755CD2 /* Assets.xcassets in Resources */,
 				F81BEF971E2939F900755CD2 /* Main.storyboard in Resources */,
 			);

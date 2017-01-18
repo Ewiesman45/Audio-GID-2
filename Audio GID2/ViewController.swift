@@ -7,19 +7,99 @@
 //
 
 import UIKit
+import AVFoundation
 
-class ViewController: UIViewController {
+class ViewController: UIViewController
+{
 
-    override func viewDidLoad() {
+    var song : AVAudioPlayer?
+
+    
+    @IBAction func replaySong(_ sender: Any)
+    {
+        print ("Replay")
+        replaySound()
+    }
+    @IBAction func pauseSong(_ sender: Any)
+    {
+        print ("Pause")
+        pauseSound()
+    }
+    @IBAction func playSong(_ sender: Any)
+    {
+       print ("Play")
+       playSound()
+        
+    }
+    override func viewDidLoad()
+    {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+       
+
+        
     }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+  func playSound()
+  {
+    
+    let url = Bundle.main.url(forResource: "sidetoside", withExtension: "mp3")!
+    do
+    {
+       song = try AVAudioPlayer(contentsOf: url)
+        guard let song = song else { return }
+        
+        song.prepareToPlay()
+        song.play()
     }
+    
+    catch let error
+    {
+        print(error.localizedDescription)
+    }
+    
+}
+    
+    func pauseSound()
+    {
+        
+        let url = Bundle.main.url(forResource: "sidetoside", withExtension: "mp3")!
+        do
+        {
+            song = try AVAudioPlayer(contentsOf: url)
+            guard let song = song else { return }
+            
+            song.prepareToPlay()
+            song.pause()
+        }
+            
+        catch let error
+        {
+            print(error.localizedDescription)
+        }
+        
+    }
+    
+    func replaySound()
+    {
+        
+        let url = Bundle.main.url(forResource: "sidetoside", withExtension: "mp3")!
+        do
+        {
+            song = try AVAudioPlayer(contentsOf: url)
+            guard let song = song else { return }
+            
+            song.prepareToPlay()
+            song.currentTime = 0
+            song.play()
+        }
+            
+        catch let error
+        {
+            print(error.localizedDescription)
+        }
+        
+    }
+
 
 
 }
-
