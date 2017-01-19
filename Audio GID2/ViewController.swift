@@ -12,6 +12,11 @@ import AVFoundation
 class ViewController: UIViewController
 {
 
+    @IBOutlet weak var textBox: UITextField!
+    @IBOutlet weak var dropDown: UIPickerView!
+    
+    
+    
     var song : AVAudioPlayer?
 
     
@@ -50,6 +55,7 @@ class ViewController: UIViewController
         
         song.prepareToPlay()
         song.play()
+        
     }
     
     catch let error
@@ -91,13 +97,14 @@ class ViewController: UIViewController
             song.prepareToPlay()
             song.currentTime = 0
             song.play()
+            
         }
             
         catch let error
         {
             print(error.localizedDescription)
         }
-        
+    
     }
 
 
